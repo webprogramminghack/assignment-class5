@@ -1,5 +1,27 @@
-$white: #fff;
-$black: #000;
+$white      : #ffffff;
+$black      : #000000;
+$warning    : #ffc107;
+$success    : #198754;
+$danger     : #dc3545;
+$gray       : #808080;
+
 
 // implement the 2 dimensional map using the provided color palette from the design here
 // make sure to use '' for the keys, for example 'gray'
+$colors : (
+    'brand': (
+        'color': $black
+    ),
+    'warning': (
+        'color': $warning
+    ),
+    'error': (
+        'color': $danger,
+    ),
+    'success': (
+        'color': $success
+    ),
+    'gray': (
+        'color': $gray
+    )
+);
