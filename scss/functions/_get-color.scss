@@ -4,8 +4,18 @@
 
 @function get-color($color, $weight) {
   @if map-has-key($colors, $color) {
-    @return map-get($colors, $color);
+    $color-map: map-get($colors, $color); // Get the nested map for the color
+    @if map-has-key($color-map, $weight) {
+      @return map-get(
+        $color-map,
+        $weight
+      ); // Return the specific weight's color
+    } @else {
+      @warn 'The weight #{$weight} does not exist for color #{$color}.';
+      @return null;
+    }
   } @else {
-    @warn 'there is a mistaken in #{$color} name';
+    @warn 'The color #{$color} does not exist.';
+    @return null;
   }
 }
