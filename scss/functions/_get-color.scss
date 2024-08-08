@@ -2,12 +2,12 @@
 
 // implement the get-color function that utilizes the 2 dimensional map to return the color value based on the provided type and level here
 
-@function get-color($class, $font-weight) {
+@function get-color($type, $level) {
     @each $name, $details in $colors {
-        $color: map-get($details, 'color');
+        $color: map-get($details, $level);
 
-        @if $name == $class {
-            @debug "#{$name}: #{$color}";
+        @if $name == $type {
+            // @debug "#{$name}: #{$color} - #{$level}";
 
             @return #{$color};
         }
