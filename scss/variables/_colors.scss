@@ -3,3 +3,11 @@ $black: #000;
 
 // implement the 2 dimensional map using the provided color palette from the design here
 // make sure to use '' for the keys, for example 'gray'
+
+$colors: (
+  'brand': #250ef6,
+  'warning': #fc7506,
+  'error': #fa0909,
+  'success': #07f00f,
+  'gray': #726a6a,
+);
