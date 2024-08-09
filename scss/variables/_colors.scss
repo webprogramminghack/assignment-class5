@@ -1,5 +1,49 @@
 $white: #fff;
 $black: #000;
 
+// $font-weights: (
+//   'regular':(
+//     'weight': 400,
+//   ),
+//   'medium':(
+//     'weight': 500,
+//   ),
+//   'semibold':(
+//     'weight': 600,
+//   ),
+//   'bold':(
+//     'weight': 700,
+//   ),
+// );
+
+$colors-list:(
+  'brand':(
+    'color': #b692f6,
+    'weight': 400,
+  ),
+  
+  'warning':(
+    'color': #dc6803,
+    'weight': 500,
+  ),
+
+  'error':(
+    'color': #f04438,
+    'weight': 600,
+  ),
+  
+  'success':(
+    'color': #067647,
+    'weight': 700,
+  ),
+  
+  'gray':(
+    'color': #475467,
+    'weight': 800,
+  ),
+
+);
+
+
 // implement the 2 dimensional map using the provided color palette from the design here
 // make sure to use '' for the keys, for example 'gray'
