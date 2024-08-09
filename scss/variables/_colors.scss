@@ -1,45 +1,30 @@
 $white: #fff;
 $black: #000;
 
-// $font-weights: (
-//   'regular':(
-//     'weight': 400,
-//   ),
-//   'medium':(
-//     'weight': 500,
-//   ),
-//   'semibold':(
-//     'weight': 600,
-//   ),
-//   'bold':(
-//     'weight': 700,
-//   ),
-// );
-
 $colors-list:(
   'brand':(
     'color': #b692f6,
-    'weight': 400,
+    'font': 'regular',
   ),
   
   'warning':(
     'color': #dc6803,
-    'weight': 500,
+    'font': 'medium',
   ),
 
   'error':(
     'color': #f04438,
-    'weight': 600,
+    'font': 'semibold',
   ),
   
   'success':(
     'color': #067647,
-    'weight': 700,
+    'font': 'medium',
   ),
   
   'gray':(
     'color': #475467,
-    'weight': 800,
+    'font': 'regular',
   ),
 
 );

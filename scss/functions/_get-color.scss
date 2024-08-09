@@ -1,16 +1,16 @@
 @import '../variables/colors';
 
 
-
 @function get-color($class-name, $font-weight) {
 
    @each $key, $colors in $colors-list {
         $color: map-get($colors, 'color');
-        $weight: map-get($colors, 'weight');
+        $weight: map-get($colors, 'font');
 
         @if ($key == $class-name) {
-            @debug "#{$key} - #{$color}";
-            @debug "Font weight - #{$weight}";
+            //@debug "#{$key} - #{$color}";
+            @debug "#{$key} Color = #{$color}";
+            @debug "Font = #{$weight}";
 
             //@return #{$color} #{$weight} ;
             @return #{$color} ;
