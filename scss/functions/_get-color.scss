@@ -1,3 +1,20 @@
 @import '../variables/colors';
 
 // implement the get-color function that utilizes the 2 dimensional map to return the color value based on the provided type and level here
+@function get-color($color, $hex) {
+  @if map-has-key($colors, $color) {
+    $hexes: map-get($colors, $color);
+    //@debug $hexes;
+
+    @if map-has-key($hexes, $hex) {
+      $color-chosen: map-get($hexes, $hex);
+      //@debug $color-chosen;
+
+      @return $color-chosen;
+    } @else {
+      @error "The color_weight '#{$hex}' is not found in color '#{$colors}'.";
+    }
+  } @else {
+    @error "color '#{$colors}' is not found in the color list.";
+  }
+}
