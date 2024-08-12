@@ -1,3 +1,360 @@
 @import '../variables/colors';
 
 // implement the get-color function that utilizes the 2 dimensional map to return the color value based on the provided type and level here
+
+$color: (
+  Base: (
+    base1: (
+      'AAA 21.1',
+      none,
+      #ffffff,
+    ),
+    base2: (
+      'AAA 21.1',
+      none,
+      #000000,
+    ),
+  ),
+
+  Gray: (
+    gray1: (
+      'AAA 7.49',
+      25,
+      #fcfcfd,
+    ),
+    gray2: (
+      'AAA 7.35',
+      50,
+      #f9fafb,
+    ),
+    gray3: (
+      'AA 6.97',
+      100,
+      #f2f4f7,
+    ),
+    gray4: (
+      'AA 7.68',
+      200,
+      #e4e7ec,
+    ),
+    gray5: (
+      'AA 5.21',
+      300,
+      #d0d5dd,
+    ),
+    gray6: (
+      '2.58',
+      400,
+      #98a2b3,
+    ),
+    gray7: (
+      'AA 4.95',
+      500,
+      #667085,
+    ),
+    gray8: (
+      'AAA 7.65',
+      600,
+      #475467,
+    ),
+    gray9: (
+      'AAA 10.41',
+      700,
+      #344054,
+    ),
+    gray10: (
+      'AAA 16.02',
+      800,
+      #182230,
+    ),
+    gray11: (
+      'AAA 17.79',
+      900,
+      #101828,
+    ),
+    gray12: (
+      'AAA 18.84',
+      950,
+      #0c111d,
+    ),
+  ),
+  Brand: (
+    brand1: (
+      'AA 6.39',
+      25,
+      #fcfaff,
+    ),
+    brand2: (
+      'AA 6.16',
+      50,
+      #f9f5ff,
+    ),
+    brand3: (
+      'AA 5.74',
+      100,
+      #f4ebff,
+    ),
+    brand4: (
+      'AA 4.93',
+      200,
+      #e9d7fe,
+    ),
+    brand5: (
+      '3.89',
+      300,
+      #d6bbfb,
+    ),
+    brand6: (
+      '2.49',
+      400,
+      #b692f6,
+    ),
+    brand7: (
+      '3.33',
+      500,
+      #9e77ed,
+    ),
+    brand8: (
+      'AA 4.96',
+      600,
+      #7f56d9,
+    )
+    brand9:
+    (
+      'AA 6.63',
+      700,
+      #6941c6,
+    )
+    brand10:
+    (
+      'AAA' 8.67,
+      800,
+      #53389e,
+    ),
+    brand11: (
+      'AAA' 10.78,
+      900,
+      #42307d,
+    ),
+    brand12: (
+      'AAA' 14.66,
+      950,
+      #2c1c5f,
+    ),
+  ),
+  Error: (
+    error1: (
+      'AA 6.4',
+      25,
+      #fffbfa,
+    ),
+    error2: (
+      'AA 6.06',
+      50,
+      #fef3f2,
+    ),
+    error3: (
+      'AA 5.4',
+      100,
+      #fee4e2,
+    ),
+    error4: (
+      'AA 4.56',
+      200,
+      #fecdca,
+    ),
+    error5: (
+      '3.38',
+      300,
+      #fda29b,
+    ),
+    error6: (
+      '2.78',
+      400,
+      #f97066,
+    ),
+    error7: (
+      '3.76',
+      500,
+      #f04438,
+    ),
+    error8: (
+      'AA 4.82',
+      600,
+      #d92d20,
+    )
+    error9:
+    (
+      'AA 6.60',
+      700,
+      #b42318,
+    )
+    error10:
+    (
+      'AAA 8.70',
+      800,
+      #912018,
+    ),
+    error11: (
+      'AAA 9.86',
+      900,
+      #7a271a,
+    ),
+    error12: (
+      'AAA 13.97',
+      950,
+      #55160c,
+    ),
+  ),
+  warning: (
+    warning1: (
+      'AA 5.28',
+      25,
+      #fffcf5,
+    ),
+    warning2: (
+      'AA 5.17',
+      50,
+      #fffaeb,
+    ),
+    warning3: (
+      'AA 4.75',
+      100,
+      #fef0c7,
+    ),
+    warning4: (
+      '4.15',
+      200,
+      #fedf89,
+    ),
+    warning5: (
+      '3.50',
+      300,
+      #fec84b,
+    ),
+    warning6: (
+      '1.84',
+      400,
+      #fdb022,
+    ),
+    warning7: (
+      '2.34',
+      500,
+      #f79009,
+    ),
+    warning8: (
+      '3.49',
+      600,
+      #dc6803,
+    ),
+    warning9: (
+      'AA 5.40',
+      700,
+      #b54708,
+    ),
+
+    warning10: (
+      'AAA 7.49',
+      800,
+      #93370d,
+    ),
+    warning11: (
+      'AAA 9.48',
+      900,
+      #7a2e0e,
+    ),
+    warning12: (
+      'AAA 13.92',
+      950,
+      #4e1d09,
+    ),
+  ),
+  Success: (
+    success1: (
+      'AA 5.51',
+      25,
+      #f6fef9,
+    ),
+    success2: (
+      'AA 5.36',
+      50,
+      #ecfdf3,
+    ),
+    success3: (
+      'AA 5.07',
+      100,
+      #dcfae6,
+    ),
+    success4: (
+      '4.27',
+      200,
+      #abefc6,
+    ),
+    success5: (
+      ' 3.51',
+      300,
+      #75e0a7,
+    ),
+
+    success6: (
+      '2.03',
+      400,
+      #47cd89,
+    ),
+    success7: (
+      '2.76',
+      500,
+      #17b26a,
+    ),
+    success8: (
+      '3.91',
+      600,
+      #079455,
+    ),
+    success9: (
+      'AA 5.66',
+      700,
+      #067647,
+    ),
+    success10: (
+      'AAA 7.92',
+      800,
+      #085d3a,
+    ),
+    success11: (
+      'AAA 9.95',
+      900,
+      #074d31,
+    ),
+    success12: (
+      'AAA 13.93',
+      950,
+      #053321,
+    ),
+  ),
+);
+//fungsi untuk menghasilkan warna berdasarkan tipe warna dan nomor item//
+@function get-color($type, $item) {
+  @if $type == 'base' {
+    @return map-get(map-get($color, 'base'), $item);
+  } @else if$type== 'gray' {
+    @return map-get(map-get($color, 'gray'), $item);
+  } @else if$type== 'brand' {
+    @return map-get(map-get($color, 'brand'), $item);
+  } @else if$type== 'error' {
+    @return map-get(map-get($color, 'error'), $item);
+  } @else if$type== 'warning' {
+    @return map-get(map-get($color, 'warning'), $item);
+  } @else if$type== 'succes' {
+    @return map-get(map-get($color, 'succes'), $item);
+  } @else {
+    @return null;
+  }
+}
+@mixin apply-color($type, $item) {
+  color: get-color($type, $item);
+}
+//penggunaan mixin//
+.element {
+  @include apply-color('base', 'base1');
+}

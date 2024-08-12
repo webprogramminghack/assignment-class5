@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 html,
 body,
 div,
@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -141,9 +141,9 @@ table {
 }
 
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   appearance: button;
   -webkit-appearance: button;
   background: none;
@@ -152,13 +152,13 @@ button,
 }
 
 button[disabled],
-[type=button][disabled],
-[type=reset][disabled],
-[type=submit][disabled] {
+[type='button'][disabled],
+[type='reset'][disabled],
+[type='submit'][disabled] {
   cursor: default;
 }
 
-[type=search] {
+[type='search'] {
   appearance: textfield;
   -webkit-appearance: textfield;
 }
@@ -172,13 +172,13 @@ a {
   text-decoration: none;
 }
 
-[type=checkbox],
-[type=radio] {
+[type='checkbox'],
+[type='radio'] {
   padding: 0;
 }
 
 :root {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
