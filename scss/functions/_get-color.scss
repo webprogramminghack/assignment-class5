@@ -1,26 +1,11 @@
 @import '../variables/colors';
 
-
-@function get-color($class-name, $font-weight) {
-
-   @each $key, $colors in $colors-list {
-        $color: map-get($colors, 'color');
-        $weight: map-get($colors, 'font');
-
-        @if ($key == $class-name) {
-            //@debug "#{$key} - #{$color}";
-            @debug "#{$key} Color = #{$color}";
-            @debug "Font = #{$weight}";
-
-            //@return #{$color} #{$weight} ;
-            @return #{$color} ;
-        }
-    };
-}
-
-
-// @each $key, $value in map-get($colors, 'brand') {
-//   @debug $value;
-// }
-
 // implement the get-color function that utilizes the 2 dimensional map to return the color value based on the provided type and level here
+
+//prettier-ignore
+@function get-color($keyClass, $keyColor) {
+    @debug 'Class name: #{$keyClass}';
+    @debug "Class color: #{$keyColor}";
+    //@debug $colors-list;
+  @return map-get(map-get($colors-list, $keyClass), $keyColor);
+}
